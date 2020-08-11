@@ -20,12 +20,12 @@
 
 ## 분석 과정 
 ### 1.분석 사용 변수 및 생성 과정
-![](https://ifh.cc/g/p3eRQ.jpg)
+![](https://user-images.githubusercontent.com/45617225/89879900-8ce1b600-dbfe-11ea-9aca-b009ec169031.png)
 - 아래 테이블은 `근방 시설물 수` 파생변수 생성에 대한 분류 기준 및 근거임
- ![](https://ifh.cc/g/LvjeH.jpg)
+ ![](https://user-images.githubusercontent.com/45617225/89879759-5c9a1780-dbfe-11ea-81d1-2c7928e55b58.png)
    
 - 아래 테이블은 택시 DTG(Digital Tacho Graph, 디지털 운행기록장치ㅡ차량의 GPS위치, 속도, 이동거리 등을 기록한 로그 데이터) 데이터를 이용하여 파생변수를 생성한 과정을 나타냄 
- ![](https://ifh.cc/g/QyUcS.jpg)
+ ![](https://user-images.githubusercontent.com/45617225/89880016-aedb3880-dbfe-11ea-82cc-1f9ed2f15af1.png)
 
  - 이때 변수간 상관관계를 확인하여 모델링에 반영함
  
@@ -34,13 +34,13 @@
 ####  Y(종속변수) 
 '사고 심각도'로 설정하였으며, 이 사고 심각도 지수는 교통사고 관련 분석에서 활용되며 기존 논문ㅡ[원문](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiOrteView.kci?sereArticleSearchBean.artiId=ART001458138)을 바탕으로 '지수'를 이용함 
 <p align="center">
-  <img width="700" height="250" src="https://ifh.cc/g/yJhHk.png">
+  <img width="700" height="250" src="https://user-images.githubusercontent.com/45617225/89880091-c87c8000-dbfe-11ea-9559-e859db110dbf.png">
 </p>
 
 #### 다중공선성 확인 
 - 변수간 다중공선성을 확인해본 결과 변수간 상관관계가 대체적으로 높았기 때문에 GLM 모형에 Lasso Penalty 적용 고려함 
 <p align="center">
-  <img width="700" height="250" src="https://ifh.cc/g/XRPpW.png">
+  <img width="700" height="250" src="https://user-images.githubusercontent.com/45617225/89880131-d9c58c80-dbfe-11ea-9bc7-ecdc891d4b50.png">
 </p>
 
 - 사용한 모형은 Gamma GLM, Gradient Boosting, Random Forest 이며, 각각의 해석은 ppt 자료 참고
@@ -52,17 +52,17 @@
 
 #### (1) 도로 및 환경 요인
 <p align="center">
-  <img width="700" height="250" src="https://ifh.cc/g/sZH2E.jpg">
+  <img width="700" height="250" src="https://user-images.githubusercontent.com/45617225/89880199-f19d1080-dbfe-11ea-89da-7e1ae87b7cbb.png">
 </p>
 
 #### (2) 사람 요인
 <p align="center">
-  <img width="700" height="250" src="https://ifh.cc/g/aNIQp.jpg">
+  <img width="700" height="250" src="https://user-images.githubusercontent.com/45617225/89880218-f82b8800-dbfe-11ea-9145-9d70f1bdc351.png">
 </p>
 
 #### (3) 차량 요인
 <p align="center">
-  <img width="700" height="250" src="https://ifh.cc/g/zXQtY.jpg">
+  <img width="700" height="250" src="https://user-images.githubusercontent.com/45617225/89880239-fd88d280-dbfe-11ea-97b6-0fc471b387f4.png">
 </p>
 
 
